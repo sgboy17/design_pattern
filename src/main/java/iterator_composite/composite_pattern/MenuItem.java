@@ -1,5 +1,7 @@
 package iterator_composite.composite_pattern;
 
+import java.util.Iterator;
+
 /**
  * Created by nghiapv on 07/04/2017.
  */
@@ -35,6 +37,10 @@ public class MenuItem extends MenuComponent {
     public boolean isVegetarian() {
         return vegetarian;
     }
+
+    @Override
+    public Iterator createIterator() {
+        return new NullIterator();    }
 
     public void print(){
         System.out.print(" " + getName());

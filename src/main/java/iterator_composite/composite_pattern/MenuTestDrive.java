@@ -19,9 +19,10 @@ public class MenuTestDrive {
 
         dinerMenu.add(dissertMenu);
         dissertMenu.add(new MenuItem("Meat Pie", "Meat Pie cake", 2.59, false));
+        dissertMenu.add(new MenuItem("Lemon Pie", "Lemon Pie cake", 1.59, true));
 
         Waitress waitress = new Waitress(allMenu);
-        waitress.printMenu();
+        waitress.printVegetarian();
 
     }
 
